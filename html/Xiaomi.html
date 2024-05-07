@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon3.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ttct.js"></script>
+    
+</head>
+<body>
+  <img src="../img/TroChuyen.gif" id="chat" alt="" class="img-circle tro_chuyen">
+  <div id="mdChat" class="modal"  role="dialog">
+    <div class="modal-dialog modal_chat">
+      <div class="modal_chat_header">
+          <button type="button" class="btn btn-default close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal_chat_body">
+          <img src="../img/logo3.jpg" alt="">
+          <i class="text"><br><strong>Phonemart</strong> xin chào mừng quý khách đến với hỗ trợ trực tuyến!</i><br><br><br>
+          <form name="dien" action="">
+            <label for="xungho">Quý khách muốn xưng hô là:</label>
+            <input type="radio" class="xungho" name="xungho" value="Chị"/>Chị
+            <input type="radio" class="xungho" name="xungho" value="Anh" checked/> Anh
+            <p>Tên của quý khách là:</p>
+            <input type="text" id="txtTen">
+            <span id="tbTen" class="text-danger"></span>
+            <p>Số điện thoại của quý khách là:</p>
+            <input type="text" name="" id="txtDT">
+            <span id="tbDT" class="text-danger"></span> <br>
+            <input type="checkbox" name="dk" id="" checked>Bạn đồng ý với điều khoản của Phonemart.com
+          </form>
+        </div>
+        <div class="modal_chat_footer">
+          <button type="button" class="btn btn-info" id="bdChat" data-dismiss="modal">Bắt đầu chat</button>
+        </div> 
+      </div>
+     </div>
+    </div>
+  </div>
+  <div id="mdbdChat" class="modal"  role="dialog">
+    <div class="modal-dialog modal_chat">
+      <div class="modal_chat_header">
+          <button type="button" class="close" data-dismiss="modal">Đóng&times;</button>
+        </div>
+        <div class="modal_chat_body">
+          <img src="../img/chat.png" alt="" style="width: 20px; height: 20px;">
+          <p>Nhân viên hỗ trợ</p>
+          <p class="text_chat">Chào anh/chị, em là tư vấn viên của Phonemart.com,
+            em có thể hỗ trợ được gì cho mình ạ?
+          </p>
+          <button class="btn btn-default">Tư vấn sản phẩm</button>
+          <button class="btn btn-default">Kiểm tra đơn hàng</button>
+          <button class="btn btn-default">Tra cứu bảo hành</button>
+          <button class="btn btn-default">Hỗ trợ ký thuật</button>
+          <button class="btn btn-default">Chat với nhân viên</button>
+          <input type="text" style="position: fixed;bottom:0px; left: 20px; width: 230px; height: 35px;" placeholder="Nhập tin nhắn...">
+          <button class="btn btn-default" style="position: fixed;bottom: 0px;right: 20px;"><img src="../img/ib.png" alt="" style="width: 25px;height: 25px;"></button>
+        </div>
+        <div class="modal_chat_footer">
+         
+        </div> 
+      </div>
+     </div>
+    </div>
+  </div>
+    <div class="container-fuild" style="background-color: #9EDBFF;">
+      <div class="container" style="display: block;">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="../img/topbar1.png" alt="Los Angeles" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="../img/topbar2.png" alt="Chicago" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="../img/topbar3.png" alt="New york" style="width:100%;">
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" ></i>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" >></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12" style="background-color: #9EDBFF;">
+      <header class="container-fluid" style=" width:100%; ">
+            <div style="padding-top: 10px;">
+              <nav class="navbar navbar-default">
+                <div class="container" style="height: 120px;">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="../html/home.html">
+                      <img src="../img/logo3.jpg" alt="" style="width: 60px; height: 60px; margin-left: 30px; "><br>
+                      <h2 style=" color: #9EDBFF; margin-top: -10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Phonemart</h2> 
+                    </a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <li class="text_menu"><a href="../html/GioiThieu.html"><span class="glyphicon glyphicon-envelope"></span>Giới thiệu</a></li>
+                    <li style="padding-top: 0px;"><a href="#">
+                      <form>
+                        <div class="form-group">
+                          <label for="sel1">Xem tại kho: </label>
+                          <select class="form-control" id="sel1">
+                            <option class="active">TP.HCM</option>
+                            <option>Hà Nội</option>
+                            <option>Cần Thơ</option>
+                            <option>Đà Nẵng</option>
+                            <option>Cà Mau</option>
+                            <option>Bạc Liêu</option>
+                            <option>Tiền Giang</option>
+                            <option>Bình Dương</option>
+                            <option>Bình Thuận</option>
+                            <option>Bình Phước</option>
+                            <option>Ninh Thuận</option>
+                            <option>Bà Rịa - Vũng Tàu</option>
+                            <option>Đồng Nai</option>
+                          </select>
+                        </div>
+                      </form>
+                    </a></li>
+                    <li style="padding-top: 5px;"><a href="#">
+                      <form class="navbar-form navbar-left" action="/action_page.php">
+                        <div class="form-group">
+                          <input type="text" style="width: 150px;" class="form-control" placeholder="Bạn tìm gì...">
+                          <button type="submit" class="btn btn-default" ><img src="../img/search.png" alt=""></button>
+                        </div>
+                      </form>
+                    </a></li>
+                    <li class="text_menu"><a href="../html/GioHang.html"><img src="../img/shop.png" alt="">Giỏ hàng</a></li>
+                    <li class="text_menu"><a href="../html/DangNhap.html"><img src="../img/login.png" alt=""> Đăng nhập</a></li>
+                    <li class="text_menu"><a href="../html/DangKy.html"><img src="../img/register.png" alt="">Đăng ký</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+      </header>
+    </div>
+
+    <!--Menu-->
+    <nav class="col-xs-12 col-sm-12 col-md-12">
+      <div class="btn-group btn-group-justified" style="margin-left: 20px;">
+        <a href="../html/iPhone.html" ><img src="../img/logoiP.png" alt="" class="logo"></a>
+        <a href="../html/SamSung.html"><img src="../img/logoSS.png" alt="" class="logo"></a>
+        <a href="../html/OPPO.html"><img src="../img/logoOP.png" alt="" class="logo"></a>
+        <a href="../html/Vivo.html"><img src="../img/logoViVo.png" alt="" class="logo"></a>
+        <a href="../html/Realme.html"><img src="../img/logoRealme.png" alt="" class="logo"></a>
+        <a href="../html/Xiaomi.html"><img src="../img/logoXiaomi.png" alt="" class="logo"></a>
+    </div>
+    </nav>
+  
+      <!--Duong dan-->
+      <nav aria-label="breadcrumb" >
+        <ol class="breadcrumb" style="background-color: white; margin-left: 30px;">
+          <li class="breadcrumb-item"><a href="../html/home.html">Trang chủ</a></li>
+          <li class="breadcrumb-item active" aria-current="page">8 điện thoại Xiaomi</li>
+        </ol>
+      </nav>
+      <!--Uu dai-->
+      <div class="container">
+        <div class="col-md-8 col-sm-8 col-xs-8">
+            <img src="../img/SPNoiBatXiaomi.png" alt="" style="width: 730px; height: auto;">
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4">
+            <img src="../img/KM3.png" alt="" style="margin-bottom: 10px; height: 85px;">
+            <img src="../img/KM4.png" alt="" style="height: 85px;">
+          </div>
+      </div>
+      <hr>
+
+      
+      <table class="container" style="padding: 0 auto">
+        <tr>
+            <td id="xRN11">
+            
+                <div class="thumbnail" style="padding: 10px 30px 30px;">
+                  <span class="label label-default">Trả góp 0%</span>
+                  <img src="../img/XiaomiRN11.png" alt="" class="img_sp">
+                  <p>
+                    <img width="20px" height="20px" float="left" src="../img/wcup.png" alt="">
+                  <span class="label label-danger">WORLD CUP SATE TO</span>
+                  </p>
+                  <h4>Xiaomi Redmi Note 11</h4>
+                  <h4><mark>6.43" Full HD+</mark></h4>
+                  <button type="button" class="btn btn-default btn_gb active">4GB-64GB</button>
+                  <button type="button" class="btn btn-default btn_gb">4GB-128GB</button>
+                  <button type="button" class="btn btn-default btn_gb">6GB-128GB</button>
+                  <h4><del>4.690.000<sup>&#8363;</sup></del> -6%</h4>
+                  <h4><strong>4.390.000 &#8363;</strong></h4>
+                  <p class="star" style="float: left;">
+                    &#9733;&#9733;&#9733;&#9733;
+                  </p>
+                  <p class="no_star" style="float: left;">&#9733;</p>
+                  <h5>258</h5>
+                  <button type="button" class="btn btn-info">Xem thông tin chi tiết</button>
+                </div>
+              
+            </td>
+            <div id="mdXRN11" class="modal" >
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h2 style="width: 100%; text-align: center;">THÔNG TIN CHI TIẾT</h2> 
+                      </div>
+                      <div class="container modal-body">
+                          <div class="col-md-3 col-sm-3 col-xs-3">
+                              <img src="../img/XiaomiRN11.jpeg" alt="" style="width: 300px; height: 370px;">
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-4">
+                              <p>
+                                <img width="20px" height="20px" float="left" src="../img/wcup.png" alt="">
+                              <span class="label label-danger">WORLD CUP SATE TO</span>
+                              </p>
+                              <h4>Xiaomi Redmi Note 11</h4>
+                              <h4><mark>6.43" Full HD+</mark></h4>
+                              <button type="button" class="btn btn-default btn_gb active">4GB-64GB</button>
+                              <button type="button" class="btn btn-default btn_gb">4GB-128GB</button>
+                              <button type="button" class="btn btn-default btn_gb">6GB-128GB</button>
+                              <h4><del>4.690.000<sup>&#8363;</sup></del> -6%</h4>
+                              <h4><strong>4.390.000 &#8363;</strong></h4>
+                              <ul>
+                                  <li>Chip Snapdragon 680</li>
+                                  <li>RAM: 4GB Dung lượng: 64GB</li>
+                                  <li>Camera sau: Chính 50MP & Phụ <br> 2MP, 2MP</li>
+                                  <li>Camera trước: 13MP</li>
+                                  <li>Pin 5000 mAh, Sạc 33W</li>
+                              </ul>
+                              <p class="star_md" style="float: left;">
+                                  &#9733;&#9733;&#9733;&#9733;
+                                </p>
+                                <p class="no_star_md" style="float: left;">&#9733;</p>
+                                <h5>259</h5>
+                              <p style="position: fixed; bottom:0px;">
+                                  <button type="button" class="btn btn-default btn_mhct">Mua ngay</button>
+                                  <button type="button" class="btn btn-default btn_gh">Thêm vào giỏ hàng</button>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+
+            <td id="xRN11S">
+                <div class="thumbnail" style="padding: 10px 30px 30px;">
+                  <span class="label label-default">Trả góp 0%</span>
+                  <img src="../img/XiaomiRN11S.jpg" alt="" class="img_sp">
+                  <h4>Xiaomi Redmi Note 11S series</h4>
+                  <h4><mark>6.6" Full HD+</mark></h4>
+                  <button type="button" class="btn btn-default btn_gb active">Note 11S 5G</button>
+                  <button type="button" class="btn btn-default btn_gb">Note 11S 4G</button> 
+                  <h4>Online giá rẻ</h4> 
+                  <h4><strong>6.490.000 &#8363;</strong></h4>
+                    <p class="star" style="float: left;">
+                      &#9733;&#9733;&#9733;&#9733;
+                    </p>
+                    <p class="no_star" style="float: left;">&#9733;</p>
+                    <h5>52</h5>
+                    <button type="button" class="btn btn-info">Xem thông tin chi tiết</button>
+                 </div>
+                </div>
+              </td>
+              <div id="mdXRN11S" class="modal" >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 style="width: 100%; text-align: center;">THÔNG TIN CHI TIẾT</h2> 
+                        </div>
+                        <div class="container modal-body">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img src="../img/XiaomiRN11S.jpg" alt="" style="width: 300px; height: 370px;">
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <h4>Xiaomi Redmi Note 11S series</h4>
+                                <h4><mark>6.6" Full HD+</mark></h4>
+                                <button type="button" class="btn btn-default btn_gb active">Note 11S 5G</button>
+                                <button type="button" class="btn btn-default btn_gb">Note 11S 4G</button> 
+                                <h4>Online giá rẻ</h4> 
+                                <h4><strong>6.490.000 &#8363;</strong></h4>
+                                <ul>
+                                    <li>Chip Mediatek Dimensity 810 5G</li>
+                                    <li>RAM: 6GB Dung lượng: 128GB</li>
+                                    <li>Camera sau: Chính 50MP & Phụ <br> 8MP, 2MP</li>
+                                    <li>Camera trước: 13MP</li>
+                                    <li>Pin 5000 mAh, Sạc 33W</li>
+                                </ul>
+                                <p class="star_md" style="float: left;">
+                                    &#9733;&#9733;&#9733;&#9733;
+                                  </p>
+                                  <p class="no_star_md" style="float: left;">&#9733;</p>
+                                  <h5>52</h5>
+                                <p style="position: fixed; bottom:0px;">
+                                    <button type="button" class="btn btn-default btn_mhct">Mua ngay</button>
+                                    <button type="button" class="btn btn-default btn_gh">Thêm vào giỏ hàng</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <td id="x12">
+                <div class="thumbnail" style="padding: 10px 30px 30px;">
+                  <span class="label label-default">Trả góp 0%</span>
+                  <img src="../img/Xiaomi12.jpg" alt="" class="img_sp">
+                  <p>
+                    <img width="20px" height="20px" float="left" src="../img/wcup.png" alt="">
+                  <span class="label label-danger">WORLD CUP SALE TO</span>
+                  </p>
+                  <h4>Xiaomi 12 series</h4>
+                  <h4><mark>6.28" Full HD+</mark></h4>
+                  <button type="button" class="btn btn-default btn_gb active">Xiaomi 12</button>
+                  <button type="button" class="btn btn-default btn_gb">Xiaomi 12 Pro</button>
+                  <h4><del>19.990.000 <sup>&#8363;</sup></del> -17%</h4>
+                  <h4><strong>16.490.000 &#8363;</strong></h4>
+                  <h4>Quà 500.000 &#8363;</h4>
+                  <p class="star" style="float: left;">
+                    &#9733;&#9733;&#9733;&#9733;
+                  </p>
+                  <p class="no_star" style="float: left;">&#9733;</p>
+                  <h5>27</h5>
+                  <button type="button" class="btn btn-info">Xem thông tin chi tiết</button>
+              </div>
+              </td>
+              <div id="mdX12" class="modal" >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 style="width: 100%; text-align: center;">THÔNG TIN CHI TIẾT</h2> 
+                        </div>
+                        <div class="container modal-body">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img src="../img/Xiaomi12.jpg" alt="" style="width: 300px; height: 370px;">
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <p>
+                                    <img width="20px" height="20px" float="left" src="../img/wcup.png" alt="">
+                                  <span class="label label-danger">WORLD CUP SALE TO</span>
+                                  </p>
+                                  <h4>Xiaomi 12 series</h4>
+                                  <h4><mark>6.28" Full HD+</mark></h4>
+                                  <button type="button" class="btn btn-default btn_gb active">Xiaomi 12</button>
+                                  <button type="button" class="btn btn-default btn_gb">Xiaomi 12 Pro</button>
+                                  <h4><del>19.990.000 <sup>&#8363;</sup></del> -17%</h4>
+                                  <h4><strong>16.490.000 &#8363;</strong></h4>
+                                  <h4>Quà 500.000 &#8363;</h4>
+                                <ul>
+                                    <li>Chip Snapdragon  8 Gen 1</li>
+                                    <li>RAM: 8GB Dung lượng: 256GB</li>
+                                    <li>Camera sau: Chính 50MP & Phụ <br> 13MP, 5MP</li>
+                                    <li>Camera trước: 32MP</li>
+                                    <li>Pin 4500 mAh, Sạc 67W</li>
+                                </ul>
+                                <p class="star_md" style="float: left;">
+                                    &#9733;&#9733;&#9733;&#9733;
+                                  </p>
+                                  <p class="no_star_md" style="float: left;">&#9733;</p>
+                                  <h5>27</h5>
+                                <p style="position: fixed; bottom:0px;">
+                                    <button type="button" class="btn btn-default btn_mhct">Mua ngay</button>
+                                    <button type="button" class="btn btn-default btn_gh">Thêm vào giỏ hàng</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              <td id="x11L">
+                <div class="thumbnail" style="padding: 10px 30px 30px;">
+                  <span class="label label-default">Trả góp 0%</span>
+                  <img src="../img/Xiaomi11L.jpg" alt="" class="img_sp">
+                  <h4>Xiaomi 11 Lite 5G NE</h4>
+                  <h4><mark>6.55" Full HD+</mark></h4>
+                  <h4><del>9.490.000 <sup>&#8363;</sup></del> -6%</h4>
+                   <h4><strong>8.890.000 &#8363;</strong></h4>
+                    <p class="star" style="float: left;">
+                      &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </p>
+                    <h5>71</h5>
+                    <button type="button" class="btn btn-info">Xem thông tin chi tiết</button>
+                 </div>
+                </div>
+              </td>
+              <div id="mdX11L" class="modal" >
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 style="width: 100%; text-align: center;">THÔNG TIN CHI TIẾT</h2> 
+                        </div>
+                        <div class="container modal-body">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img src="../img/Xiaomi11L.jpg" alt="" style="width: 300px; height: 370px;">
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <h4>Xiaomi 11 Lite 5G NE</h4>
+                                <h4><mark>6.55" Full HD+</mark></h4>
+                                <h4><del>9.490.000 <sup>&#8363;</sup></del> -6%</h4>
+                                 <h4><strong>8.890.000 &#8363;</strong></h4>
+                                <ul>
+                                    <li>Chip MediaTek Dimensity 8100 Max 8</li>
+                                    <li>RAM: 12GB Dung lượng: 256GB</li>
+                                    <li>Camera sau: Chính 50MP & Phụ <br> 8MP, 2MP</li>
+                                    <li>Camera trước: 16MP</li>
+                                    <li>Pin 4500 mAh, Sạc 33W</li>
+                                </ul>
+                                <p class="star_md" style="float: left;">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                  </p>
+                                  <h5>71</h5>
+                                <p style="position: fixed; bottom:0px;">
+                                    <button type="button" class="btn btn-default btn_mhct">Mua ngay</button>
+                                    <button type="button" class="btn btn-default btn_gh">Thêm vào giỏ hàng</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </tr>
+
+        <tr>
+            <td id="x11P">
+                <div class="thumbnail" style="padding: 10px 30px 30px;">
+                    <span class="label label-default">Trả góp 0%</span>
+                    <img src="../img/Xiaomi11P.jpg" alt="" class="img_sp">
+                    <h4>Xiaomi Readmi Note 11 Pro Series</h4>
+                    <h4><mark>6.67" Full HD+</mark></h4>
+                    <button type="button" class="btn btn-default btn_gb active">Note 11 Pro</button>
+                    <button type="button" class="btn btn-default btn_gb">Note 11 Pro 5G</button>
+                    <h4><del>7.990.000 <sup>&#8363;</sup></del> -4%</h4>
+                    <h4><strong>6.690.000 &#8363;</strong></h4>
+                    <p class="star" style="float: left;">
+                      &#9733;&#9733;&#9733;
+                    </p>
+                    <p class="no_star" style="float: left;">&#9733;&#9733;</p>
+                    <h5>229</h5>
+                    <button type="button" class="btn btn-info">Xem thông tin chi tiết</button>
+                </div>
+            </td>
+            <div id="mdX11P" class="modal" >
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h2 style="width: 100%; text-align: center;">THÔNG TIN CHI TIẾT</h2> 
+                      </div>
+                      <div class="container modal-body">
+                          <div class="col-md-3 col-sm-3 col-xs-3">
+                              <img src="../img/Xiaomi11P.jpg" alt="" style="width: 300px; height: 370px;">
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-4">
+                            <h4>Xiaomi Readmi Note 11 Pro Series</h4>
+                            <h4><mark>6.67" Full HD+</mark></h4>
+                            <button type="button" class="btn btn-default btn_gb active">Note 11 Pro</button>
+                            <button type="button" class="btn btn-default btn_gb">Note 11 Pro 5G</button>
+                            <h4><del>7.990.000 <sup>&#8363;</sup></del> -4%</h4>
+                            <h4><strong>6.690.000 &#8363;</strong></h4>
+                              <ul>
+                                  <li>Chip Snapdragon 680</li>
+                                  <li>RAM: 8GB Dung lượng: 128GB</li>
+                                  <li>Camera sau: Chính 50MP & Phụ 2MP</li>
+                                  <li>Camera trước: 16MP</li>
+                                  <li>Pin 5000 mAh, Sạc 33W</li>
+                              </ul>
+                              <p class="star_md" style="float: left;">
+                                &#9733;&#9733;&#9733;
+                              </p>
+                              <p class="no_star_md" style="float: left;">&#9733;&#9733;</p>
+                              <h5>229</h5>
+                              <p style="position: fixed; bottom:0px;">
+                                  <button type="button" class="btn btn-default btn_mhct">Mua ngay</button>
+                                  <button type="button" class="btn btn-default btn_gh">Thêm vào giỏ hàng</button>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+            <td id="x12T">
+                <div class="thumbnail" style="padding: 10px 30px 30px;">
+                    <span class="label label-default">Trả góp 0%</span>
+                    <img src="../img/Xiaomi12T.jpeg" alt="" class="img_sp">
+                    <p>
+                      <img width="20px" height="20px" float="left" src="../img/SaleSoc.png" alt="">
+                    <span class="label label-danger">SALE SỐC CUỐI TUẦN</span>
+                    </p>
+                    <h4>Xiaomi 12T</h4>
+                    <h4><mark>6.67" H1.5K</mark></h4>
+                    <button type="button" class="btn btn-default btn_gb active">128GB</button>
+                    <button type="button" class="btn btn-default btn_gb">256GB</button>
+                    <h4><strong>12.990.000 &#8363;</strong></h4>
+                    <p class="star" style="float: left;">
+                      &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </p>
+                    <h5>14</h5>
+                    <button type="button" class="btn btn-info">Xem thông tin chi tiết</button>
+                </div>
+            </td>
+            <div id="mdX12T" class="modal" >
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h2 style="width: 100%; text-align: center;">THÔNG TIN CHI TIẾT</h2> 
+                      </div>
+                      <div class="container modal-body">
+                          <div class="col-md-3 col-sm-3 col-xs-3">
+                              <img src="../img/Xiaomi12T.jpeg" alt="" style="width: 300px; height: 370px;">
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-4">
+                            <p>
+                              <img width="20px" height="20px" float="left" src="../img/SaleSoc.png" alt="">
+                            <span class="label label-danger">SALE SỐC CUỐI TUẦN</span>
+                            </p>
+                              <h4>Xiaomi 12T</h4>
+                              <h4><mark>6.67" H1.5K</mark></h4>
+                              <button type="button" class="btn btn-default btn_gb active">128GB</button>
+                              <button type="button" class="btn btn-default btn_gb">256GB</button>
+                              <h4><strong>12.990.000 &#8363;</strong></h4>
+                              <ul>
+                                  <li>Chip MediaTek Helio G35</li>
+                                  <li>RAM: 4GB Dung lượng: 64GB</li>
+                                  <li>Camera sau: Chính 13MP & Phụ 2MP</li>
+                                  <li>Camera trước: 8MP</li>
+                                  <li>Pin 5000 mAh, Sạc 33W</li>
+                              </ul>
+                              <p class="star_md" style="float: left;">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                              </p>
+                              
+                              <h5>14</h5>
+                              <p style="position: fixed; bottom:0px;">
+                                  <button type="button" class="btn btn-default btn_mhct">Mua ngay</button>
+                                  <button type="button" class="btn btn-default btn_gh">Thêm vào giỏ hàng</button>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+            <td id="xA1">
+                <div class="thumbnail" style="padding: 10px 30px 30px;">
+                    <span class="label label-default">Trả góp 0%</span>
+                    <img src="../img/XiaomiA1.jpg" alt="" class="img_sp">
+                    <p>
+                      <img width="20px" height="20px" float="left" src="../img/SaleSoc.png" alt="">
+                    <span class="label label-danger">SALE SỐC CUỐI TUẦN</span>
+                    </p>
+                    <h4>Xiaomi Redmi A1</h4>
+                    <h4><mark>6.56" HD+</mark></h4>
+                    <h4><del>2.290.000 <sup>&#8363;</sup></del> 3%</h4>
+                    <h4><strong>2.090.000 &#8363;</strong></h4>
+                    <h4>Quà 200.000 &#8363;</h4>
+                    <p class="star" style="float: left;">
+                      &#9733;&#9733;&#9733;&#9733;
+                    </p>
+                    <p class="no_star" style="float: left;">&#9733;</p>
+                    <h5>15</h5>
+                    <button type="button" class="btn btn-info">Xem thông tin chi tiết</button>
+                </div>
+            </td>
+            <div id="mdXA1" class="modal" >
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h2 style="width: 100%; text-align: center;">THÔNG TIN CHI TIẾT</h2> 
+                      </div>
+                      <div class="container modal-body">
+                          <div class="col-md-3 col-sm-3 col-xs-3">
+                              <img src="../img/XiaomiA1.jpg" alt="" style="width: 300px; height: 370px;">
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-4">
+                            <p>
+                                <img width="20px" height="20px" float="left" src="../img/SaleSoc.png" alt="">
+                              <span class="label label-danger">SALE SỐC CUỐI TUẦN</span>
+                              </p>
+                              <h4>Xiaomi Redmi A1</h4>
+                              <h4><mark>6.56" HD+</mark></h4>
+                              <h4><del>2.290.000 <sup>&#8363;</sup></del> 3%</h4>
+                              <h4><strong>2.090.000 &#8363;</strong></h4>
+                              <h4>Quà 200.000 &#8363;</h4>
+                              <ul>
+                                  <li>Chip Snapdragon 680 4G</li>
+                                  <li>RAM: 8GB Dung lượng: 128GB</li>
+                                  <li>Camera sau: Chính 50MP & Phụ 2MP</li>
+                                  <li>Camera trước: 8MP</li>
+                                  <li>Pin 5000 mAh, Sạc 33W</li>
+                              </ul>
+                              <p class="star_md" style="float: left;">
+                                &#9733;&#9733;&#9733;&#9733;
+                              </p>
+                              <p class="no_star_md" style="float: left;">&#9733;</p>
+                              <h5>15</h5>
+                              <p style="position: fixed; bottom:0px;">
+                                  <button type="button" class="btn btn-default btn_mhct">Mua ngay</button>
+                                  <button type="button" class="btn btn-default btn_gh">Thêm vào giỏ hàng</button>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+            <td id="x9C">
+                <div class="thumbnail" style="padding: 10px 30px 30px;">
+                    <span class="label label-default">Trả góp 0%</span>
+                    <img src="../img/Xiaomi9C.jpg" alt="" class="img_sp">
+                    <h4>Xiaomi Redmi 9C</h4>
+                    <h4><mark>6.56" HD+</mark></h4>
+                    <h4><del>4.990.000 <sup>&#8363;</sup></del> -20%</h4>
+                    <h4><strong>3.490.000 &#8363;</strong></h4>
+                    <h4>Quà 500.000 &#8363;</h4>
+                    <p class="star" style="float: left;">
+                      &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </p>
+                    <h5>148</h5>
+                    <button type="button" class="btn btn-info">Xem thông tin chi tiết</button>
+                </div>
+            </td>
+            <div id="mdX9C" class="modal" >
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h2 style="width: 100%; text-align: center;">THÔNG TIN CHI TIẾT</h2> 
+                      </div>
+                      <div class="container modal-body">
+                          <div class="col-md-3 col-sm-3 col-xs-3">
+                              <img src="../img/OA17K.jpg" alt="" style="width: 300px; height: 370px;">
+                          </div>
+                          <div class="col-md-4 col-sm-4 col-xs-4">
+                            <h4>Xiaomi Redmi 9C</h4>
+                            <h4><mark>6.56" HD+</mark></h4>
+                            <h4><del>4.990.000 <sup>&#8363;</sup></del> -20%</h4>
+                            <h4><strong>3.490.000 &#8363;</strong></h4>
+                            <h4>Quà 500.000 &#8363;</h4>
+                              <ul>
+                                  <li>Chip MediaTek Helio G35</li>
+                                  <li>RAM: 3GB Dung lượng: 64GB</li>
+                                  <li>Camera sau: 8MP</li>
+                                  <li>Camera trước: 5MP</li>
+                                  <li>Pin 5000 mAh, Sạc 10W</li>
+                              </ul>
+                              <p class="star_md" style="float: left;">
+                                &#9733;&#9733;&#9733;&#9733;
+                              </p>
+                              <p class="no_star_md" style="float: left;">&#9733;</p>
+                              <h5>148</h5>
+                              <p style="position: fixed; bottom:0px;">
+                                  <button type="button" class="btn btn-default btn_mhct">Mua ngay</button>
+                                  <button type="button" class="btn btn-default btn_gh">Thêm vào giỏ hàng</button>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </tr>
+      </table>
+
+      <footer class="container-fluid" style="background-color:#9EDBFF;color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 18px;">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <h3>VỀ CHÚNG TÔI</h3>
+            <p>© Công ty cổ phần Phonemart</p>
+            <p>Hotline: 18001091</p>
+            <p>Email: cskhphonemart@gmail.com</p>
+            <p>Địa chỉ: 12 Nguyễn Văn Bảo - Phường 4 - Quận Gò Vấp - TP.HCM</p>
+            <div class="list-icon" style="font-size: 30px; border-radius: 1px solid;">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-google"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+            <p>Thiết kế Website bởi: Nhóm 16</p>
+            <br>
+        </div>      
+      </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+.logo{
+    border: 1px solid grey;
+    border-radius: 30px;
+    margin: 10px 40px;
+    width: auto;
+    height: 30px;
+}
+.logo:hover{
+    border: 1px solid aquamarine;
+}
+.img_sp{
+    margin-top: 20px;
+    width: 200px;
+    height: 300px;
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.thumbnail{
+    width: 250px;
+    height: 600px;
+    padding-top: 20px;
+}
+.img_sp:hover{
+    transform: translateY(-10px);
+}
+.thumbnail:hover {
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px grey;
+}
+.btn_gb{
+    margin: 1px;
+}
+mark{
+    background-color: rgb(242, 223, 223);
+}
+.star{
+    color: yellow;
+    font-size: 25px;
+}
+.no_star{
+    color: rgb(190, 183, 183);
+    font-size: 25px;
+}
+.star_md{
+    color: yellow;
+    font-size: 15px;
+}
+.no_star_md{
+    color: rgb(190, 183, 183);
+    font-size: 15px; 
+}
+.btn_mh{
+    background-color: rgb(72, 72, 255);
+    color: white;
+    padding-left: -20px;
+}
+.btn_mhct{
+    background-color: rgb(72, 72, 255);
+    color: white;
+}
+.btn_gh{
+    background-color: orangered;
+    color: white;
+}
+.tro_chuyen{
+    border: 2px solid orange;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+}
+.tro_chuyen:hover{
+    box-shadow: 5px 5px 5px orange;
+}
+header{
+    font-size: 20px;
+}
+.modal_chat{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    background-color: aliceblue;
+    border: 1px solid rgb(230, 110, 67);
+}
+.modal_chat_header{
+    background-color: rgb(231, 112, 68);
+    height: 40px;
+    border-radius:30px 30px 0px 0px;
+    padding: 10px;
+    color: white;
+}
+.modal_chat_body{
+    height: 250px;
+    border-bottom: 1x solid rgb(202, 197, 197);
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.modal_chat_body img{
+    height: 70px;
+    width: 50px;
+    float: left;
+}
+.text{
+    color: rgb(230, 128, 91);
+}
+.modal_chat_footer{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    
+}
+.text_chat{
+    float: left;
+    padding-right: 30px;
+    background-color: rgb(114, 165, 206);
+    width: 200px;
+    border-radius: 10px;
+}
+.text_menu{
+    color: white;
+    padding-top: 33px;
+}
+.form-group{
+    margin-top: 20px;
+}
+.gt{
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.gt:hover{
+    transform: translateY(-10px);
+}
+.tn:visited{
+    color: white;
+}
